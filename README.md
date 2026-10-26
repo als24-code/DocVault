@@ -1,8 +1,6 @@
 # DocVault
 
-private documents. local AI. answers with receipts.
-
-Ask questions about confidential contracts, letters and payslips without sending their contents to an online cloud service. DocVault is an Android-first document Q&A app built with React Native and a small language model running offline on the phone.
+Ask questions about confidential contracts, letters and payslips without sending their contents to an online cloud service. DocVault is an Q&A app built with React Native and a small language model running offline on the phone.
 
 - Import a PDF, photo, text file or pasted text
 - Ask questions in plain language
@@ -10,15 +8,15 @@ Ask questions about confidential contracts, letters and payslips without sending
 - Work offline after the model has been downloaded
 
 
-## The model stays on your phone
+## About the model 
 
 DocVault uses Qwen2.5-1.5B-Instruct, quantized to `Q4_K_M` GGUF, and runs inference through `llama.rn`.
 
 There is no cloud inference API in the answer pipeline. Once the model is downloaded, question answering is designed to work without Wi-Fi.
 
-The model is approximately 1 GB, so it is downloaded on first launch rather than bundled into the APK. The app includes download progress, speed, pause and resume, so an interrupted download doesn't have to start from scratch.
+The model is approximately 1 GB, so it is downloaded on first launch rather than bundled into the APK. App includes download progress, speed, pause and resume, so an interrupted download doesn't have to start from scratch.
 
-## Answers need receipts
+## Answers may need verification
 
 A plausible answer is not necessarily a correct one, especially when it concerns a contract or payslip.
 
@@ -91,6 +89,6 @@ npm run android
 
 ## Disclaimer
 
-This is a document-reading experiment, not legal, financial or professional advice. Always verify important answers against the original document, particularly when dealing with contracts, deadlines, salary or other consequential information.
+This is a document-reading experiment, not legal, financial or professional advice. Always verify important answers against the original document.
 
 The goal is to make private document search practical on a phone, with fewer unnecessary uploads and more ways to check where an answer came from.
